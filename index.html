@@ -1548,6 +1548,7 @@
                 height: 180px;
             }
         }
+<<<<<<< HEAD
 
         /* ============ JHONDER AI CHAT WIDGET ============ */
         .deepseek-ai-widget {
@@ -1911,6 +1912,8 @@
                 font-size: 22px;
             }
         }
+=======
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
     </style>
 </head>
 <body class="dark-theme">
@@ -2051,6 +2054,7 @@
         </div>
     </div>
     
+<<<<<<< HEAD
     <!-- JHONDER AI CHAT WIDGET -->
     <div class="deepseek-ai-widget" id="deepseekWidget">
         <div class="deepseek-ai-button" id="deepseekButton">
@@ -2081,6 +2085,8 @@
         </div>
     </div>
     
+=======
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
     <!-- Website Content -->
     <div class="content">
         <div class="container">
@@ -2278,7 +2284,11 @@
                     <!-- Project 4 -->
                     <div class="project-card">
                         <div class="project-image">
+<<<<<<< HEAD
                             <img src="image4.jpeg" alt="Loan Calculator">
+=======
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1211&q=80" alt="Loan Calculator">
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
                         </div>
                         <h3 class="project-title">Home Credit Calculator (C# Windows Forms)</h3>
                         <p class="project-description">A loan computation tool that calculates monthly amortization, interest rates, and payment schedules. Allows different loan terms, displays breakdown of principal vs interest, and generates payment tables. Uses Windows Forms with chart visualization.</p>
@@ -2302,7 +2312,11 @@
                     <!-- Project 5 -->
                     <div class="project-card">
                         <div class="project-image">
+<<<<<<< HEAD
                             <img src="image6.jpeg" alt="Mouse Trail Animation">
+=======
+                            <img src="image6.jpeg">
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
                         </div>
                         <h3 class="project-title">Mouse Trail Animation (HTML/CSS/JavaScript)</h3>
                         <p class="project-description">Interactive web animation that creates a colorful trailing effect following the cursor movement. Features customizable particles, color transitions, and fade effects. Built with pure JavaScript and CSS animations.</p>
@@ -2382,9 +2396,13 @@
     </div>
 
     <!-- Audio Element -->
+<<<<<<< HEAD
     <audio id="backgroundMusic" preload="auto">
         <source src="ransom.mp3" type="audio/mpeg">
     </audio>
+=======
+    <audio id="backgroundMusic" preload="auto"></audio>
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -2460,6 +2478,7 @@
         const furthestVisitor = document.getElementById('furthestVisitor');
         const visitorList = document.getElementById('visitorList');
         
+<<<<<<< HEAD
         // JHONDER AI elements
         const deepseekWidget = document.getElementById('deepseekWidget');
         const deepseekButton = document.getElementById('deepseekButton');
@@ -2468,6 +2487,11 @@
         const deepseekInput = document.getElementById('deepseekInput');
         const deepseekSend = document.getElementById('deepseekSend');
         const deepseekMessages = document.getElementById('deepseekMessages');
+=======
+        // Footer elements
+        const currentYear = document.getElementById('currentYear');
+        const currentDateFooter = document.getElementById('currentDateFooter');
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
         
         // Map variables
         let map, myMarker, visitorMarker, connectionLine;
@@ -3174,7 +3198,11 @@
                         <i class="fas fa-users fa-3x" style="margin-bottom: 15px; opacity: 0.5;"></i>
                         <p>No visitor history yet</p>
                         <p style="font-size: 0.8rem; margin-top: 5px;">Visitor data will appear here when people visit your site</p>
+<<<<<<< HEAD
                     </div>
+=======
+                </div>
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
                 `;
                 return;
             }
@@ -3296,8 +3324,13 @@
                             locationName = address.county;
                         }
                         
+<<<<<<< HEAD
                         if (address.country) {
                             locationName += `, ${address.country}`;
+=======
+                        if (address.county) {
+                            locationName += `, ${address.county}`;
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
                         }
                     }
                     
@@ -3612,6 +3645,7 @@
         
         // Update footer with current year and date
         function updateFooter() {
+<<<<<<< HEAD
             const currentYearSpan = document.getElementById('currentYear');
             const currentDateFooter = document.getElementById('currentDateFooter');
             const now = new Date();
@@ -3775,6 +3809,22 @@
             if (typingIndicator) {
                 typingIndicator.remove();
             }
+=======
+            const now = new Date();
+            
+            // Update year
+            currentYear.textContent = now.getFullYear();
+            
+            // Update date with format
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const formattedDate = now.toLocaleDateString('en-US', options);
+            currentDateFooter.innerHTML = `Updated: ${formattedDate} - CCDI Computer Communication Development Institute Sorsogon City`;
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
         }
         
         // Initialize and start everything
@@ -3802,4 +3852,8 @@
         }, 10000);
     </script>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 90b91e9a55c9f09938f70ed98a5eab8d86ba6d06
